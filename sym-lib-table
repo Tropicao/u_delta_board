@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name friendlyarm)(type Legacy)(uri /home/alexis/Projets/u_delta_board/library_friendlyarm/friendlyarm.lib)(options "")(descr ""))
+)

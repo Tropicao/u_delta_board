@@ -1,0 +1,467 @@
+EESchema Schematic File Version 4
+LIBS:u_delta_board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Relay:SANYOU_SRD_Form_C K1
+U 1 1 5BA00F81
+P 6100 3900
+F 0 "K1" V 5533 3900 50  0000 C CNN
+F 1 "SANYOU_SRD_Form_C" V 5624 3900 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 6550 3850 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 6100 3900 50  0001 C CNN
+	1    6100 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D1
+U 1 1 5BA7EB4A
+P 6800 3950
+F 0 "D1" V 6846 3822 50  0000 R CNN
+F 1 "DIODE" V 6755 3822 50  0000 R CNN
+F 2 "" H 6800 3950 50  0001 C CNN
+F 3 "" H 6800 3950 50  0001 C CNN
+	1    6800 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 5BA7EC8B
+P 6900 4750
+F 0 "Q1" H 7090 4796 50  0000 L CNN
+F 1 "BC547" H 7090 4705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7100 4675 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 6900 4750 50  0001 L CNN
+	1    6900 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BA7EE50
+P 7350 4750
+F 0 "R1" V 7143 4750 50  0000 C CNN
+F 1 "1k" V 7234 4750 50  0000 C CNN
+F 2 "" V 7280 4750 50  0001 C CNN
+F 3 "~" H 7350 4750 50  0001 C CNN
+	1    7350 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J3
+U 1 1 5BA7F29F
+P 8700 4850
+F 0 "J3" H 8728 4826 50  0000 L CNN
+F 1 "USB UVC" H 8728 4735 50  0000 L CNN
+F 2 "" H 8700 4850 50  0001 C CNN
+F 3 "~" H 8700 4850 50  0001 C CNN
+	1    8700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BA80842
+P 6800 5150
+F 0 "#PWR?" H 6800 4900 50  0001 C CNN
+F 1 "GND" H 6805 4977 50  0000 C CNN
+F 2 "" H 6800 5150 50  0001 C CNN
+F 3 "" H 6800 5150 50  0001 C CNN
+	1    6800 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BA80886
+P 5200 4800
+F 0 "#PWR?" H 5200 4550 50  0001 C CNN
+F 1 "GND" H 5205 4627 50  0000 C CNN
+F 2 "" H 5200 4800 50  0001 C CNN
+F 3 "" H 5200 4800 50  0001 C CNN
+	1    5200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BA808A3
+P 3300 4750
+F 0 "#PWR?" H 3300 4500 50  0001 C CNN
+F 1 "GND" H 3305 4577 50  0000 C CNN
+F 2 "" H 3300 4750 50  0001 C CNN
+F 3 "" H 3300 4750 50  0001 C CNN
+	1    3300 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BA809E2
+P 4900 4450
+F 0 "#PWR?" H 4900 4300 50  0001 C CNN
+F 1 "+5V" H 4915 4623 50  0000 C CNN
+F 2 "" H 4900 4450 50  0001 C CNN
+F 3 "" H 4900 4450 50  0001 C CNN
+	1    4900 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3600 6300 3350
+Wire Wire Line
+	6300 3350 6800 3350
+Wire Wire Line
+	6800 3350 6800 3750
+Connection ~ 6300 3350
+Wire Wire Line
+	6300 3350 6300 3100
+Wire Wire Line
+	6800 4150 6800 4350
+Wire Wire Line
+	6800 4350 6300 4350
+Wire Wire Line
+	6300 4350 6300 4200
+Connection ~ 6800 4350
+Wire Wire Line
+	6800 4350 6800 4550
+Wire Wire Line
+	6800 4950 6800 5150
+Wire Wire Line
+	7100 4750 7200 4750
+Wire Wire Line
+	7500 4750 7700 4750
+$Comp
+L power:+5V #PWR?
+U 1 1 5BA80BCA
+P 6300 3100
+F 0 "#PWR?" H 6300 2950 50  0001 C CNN
+F 1 "+5V" H 6315 3273 50  0000 C CNN
+F 2 "" H 6300 3100 50  0001 C CNN
+F 3 "" H 6300 3100 50  0001 C CNN
+	1    6300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3850 5600 3850
+Wire Wire Line
+	5600 3850 5600 3600
+Wire Wire Line
+	5600 3600 5900 3600
+Wire Wire Line
+	5800 4200 5800 4250
+Wire Wire Line
+	5800 4250 5600 4250
+Wire Wire Line
+	5600 4250 5600 3950
+Wire Wire Line
+	5600 3950 5350 3950
+Wire Wire Line
+	3600 4250 3400 4250
+Wire Wire Line
+	3600 4350 3300 4350
+Wire Wire Line
+	3600 4450 3400 4450
+Wire Wire Line
+	3600 4550 3400 4550
+Wire Wire Line
+	3600 4150 3400 4150
+Wire Wire Line
+	3600 4050 3400 4050
+Wire Wire Line
+	3600 3950 3400 3950
+Wire Wire Line
+	3600 3850 3400 3850
+Wire Wire Line
+	3600 3750 3400 3750
+Wire Wire Line
+	3600 3650 3400 3650
+Wire Wire Line
+	3600 3550 3400 3550
+Wire Wire Line
+	3600 3450 3400 3450
+Wire Wire Line
+	3600 3350 3400 3350
+Wire Wire Line
+	3600 3250 3400 3250
+Wire Wire Line
+	3600 3150 3400 3150
+Wire Wire Line
+	3600 3050 3400 3050
+Wire Wire Line
+	4500 3050 4700 3050
+Wire Wire Line
+	4500 3150 4700 3150
+Wire Wire Line
+	4500 3250 4700 3250
+Wire Wire Line
+	4500 3350 4700 3350
+Wire Wire Line
+	4500 3450 4700 3450
+Wire Wire Line
+	4500 3550 4700 3550
+Wire Wire Line
+	4500 3650 4700 3650
+Wire Wire Line
+	4500 3750 4700 3750
+Wire Wire Line
+	4500 3850 4700 3850
+Wire Wire Line
+	4500 3950 4700 3950
+Wire Wire Line
+	4500 4050 4700 4050
+Wire Wire Line
+	4500 4150 4700 4150
+Wire Wire Line
+	4500 4250 5200 4250
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 5BA94C6B
+P 8700 4350
+F 0 "J2" H 8727 4326 50  0000 L CNN
+F 1 "Relay" H 8727 4235 50  0000 L CNN
+F 2 "" H 8700 4350 50  0001 C CNN
+F 3 "~" H 8700 4350 50  0001 C CNN
+	1    8700 4350
+	1    0    0    -1  
+$EndComp
+Text Label 5350 3850 0    50   ~ 0
+RELAY_1
+Wire Wire Line
+	8500 4350 8350 4350
+Wire Wire Line
+	8500 4450 8350 4450
+Wire Wire Line
+	8500 3600 8350 3600
+Wire Wire Line
+	8500 3500 8350 3500
+Wire Wire Line
+	8500 4750 8350 4750
+Wire Wire Line
+	8500 4850 8350 4850
+Wire Wire Line
+	8500 4950 8350 4950
+Wire Wire Line
+	8500 5050 8350 5050
+Text Label 8350 4350 0    50   ~ 0
+RELAY_1
+Text Label 8350 4450 0    50   ~ 0
+RELAY_2
+Text Label 5350 3950 0    50   ~ 0
+RELAY_2
+Text Label 3400 4250 0    50   ~ 0
+RELAY_CTRL
+Text Label 7700 4750 0    50   ~ 0
+RELAY_CTRL
+Wire Wire Line
+	4500 4450 4900 4450
+Wire Wire Line
+	4900 4450 4900 4550
+Wire Wire Line
+	4500 4550 4900 4550
+Connection ~ 4900 4450
+Text Label 3400 4450 0    50   ~ 0
+DTX
+Text Label 3400 4550 0    50   ~ 0
+DRX
+Text Label 8350 3600 0    50   ~ 0
+DRX
+Text Label 8350 3500 0    50   ~ 0
+DTX
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5BAA7B64
+P 8700 3600
+F 0 "J1" H 8672 3480 50  0000 R CNN
+F 1 "Debug" H 8672 3571 50  0000 R CNN
+F 2 "" H 8700 3600 50  0001 C CNN
+F 3 "~" H 8700 3600 50  0001 C CNN
+	1    8700 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BAAB65F
+P 8350 3700
+F 0 "#PWR?" H 8350 3450 50  0001 C CNN
+F 1 "GND" H 8355 3527 50  0000 C CNN
+F 2 "" H 8350 3700 50  0001 C CNN
+F 3 "" H 8350 3700 50  0001 C CNN
+	1    8350 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 3400 8350 3400
+Wire Wire Line
+	8500 3700 8350 3700
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5BAAF2E8
+P 8350 3400
+F 0 "#PWR?" H 8350 3250 50  0001 C CNN
+F 1 "+3V3" H 8365 3573 50  0000 C CNN
+F 2 "" H 8350 3400 50  0001 C CNN
+F 3 "" H 8350 3400 50  0001 C CNN
+	1    8350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5BAAF42A
+P 4800 4350
+F 0 "#PWR?" H 4800 4200 50  0001 C CNN
+F 1 "+3V3" H 4815 4523 50  0000 C CNN
+F 2 "" H 4800 4350 50  0001 C CNN
+F 3 "" H 4800 4350 50  0001 C CNN
+	1    4800 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4350 4800 4350
+Wire Wire Line
+	5200 4250 5200 4800
+Wire Wire Line
+	3300 4350 3300 4750
+$Comp
+L power:+5V #PWR?
+U 1 1 5BAB8C74
+P 8350 4750
+F 0 "#PWR?" H 8350 4600 50  0001 C CNN
+F 1 "+5V" H 8365 4923 50  0000 C CNN
+F 2 "" H 8350 4750 50  0001 C CNN
+F 3 "" H 8350 4750 50  0001 C CNN
+	1    8350 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BAB8CB8
+P 8350 5050
+F 0 "#PWR?" H 8350 4800 50  0001 C CNN
+F 1 "GND" H 8355 4877 50  0000 C CNN
+F 2 "" H 8350 5050 50  0001 C CNN
+F 3 "" H 8350 5050 50  0001 C CNN
+	1    8350 5050
+	1    0    0    -1  
+$EndComp
+Text Label 8350 4850 0    50   ~ 0
+DP2
+Text Label 4700 3650 0    50   ~ 0
+DP2
+Text Label 4700 3750 0    50   ~ 0
+DM2
+Text Label 8350 4950 0    50   ~ 0
+DM2
+NoConn ~ 3400 3050
+NoConn ~ 3400 3150
+NoConn ~ 3400 3250
+NoConn ~ 3400 3350
+NoConn ~ 3400 3450
+NoConn ~ 3400 3550
+NoConn ~ 3400 3650
+NoConn ~ 3400 3750
+NoConn ~ 3400 3850
+NoConn ~ 3400 3950
+NoConn ~ 3400 4050
+NoConn ~ 3400 4150
+NoConn ~ 4700 4150
+NoConn ~ 4700 4050
+NoConn ~ 4700 3950
+NoConn ~ 4700 3850
+NoConn ~ 4700 3550
+NoConn ~ 4700 3450
+NoConn ~ 4700 3350
+NoConn ~ 4700 3250
+NoConn ~ 4700 3150
+NoConn ~ 4700 3050
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5BADE0FE
+P 3650 2050
+F 0 "#FLG?" H 3650 2125 50  0001 C CNN
+F 1 "PWR_FLAG" H 3650 2224 50  0000 C CNN
+F 2 "" H 3650 2050 50  0001 C CNN
+F 3 "~" H 3650 2050 50  0001 C CNN
+	1    3650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5BADE120
+P 4050 2050
+F 0 "#FLG?" H 4050 2125 50  0001 C CNN
+F 1 "PWR_FLAG" H 4050 2224 50  0000 C CNN
+F 2 "" H 4050 2050 50  0001 C CNN
+F 3 "~" H 4050 2050 50  0001 C CNN
+	1    4050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BADF674
+P 4050 2200
+F 0 "#PWR?" H 4050 1950 50  0001 C CNN
+F 1 "GND" H 4055 2027 50  0000 C CNN
+F 2 "" H 4050 2200 50  0001 C CNN
+F 3 "" H 4050 2200 50  0001 C CNN
+	1    4050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BADF6B5
+P 3650 2200
+F 0 "#PWR?" H 3650 2050 50  0001 C CNN
+F 1 "+5V" H 3665 2373 50  0000 C CNN
+F 2 "" H 3650 2200 50  0001 C CNN
+F 3 "" H 3650 2200 50  0001 C CNN
+	1    3650 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 2200 3650 2050
+Wire Wire Line
+	4050 2200 4050 2050
+NoConn ~ 6000 4200
+$Comp
+L friendlyarm:nanopi_duo P1
+U 1 1 5BAE6517
+P 4050 3800
+F 0 "P1" H 4050 4815 50  0000 C CNN
+F 1 "nanopi_duo" H 4050 4724 50  0000 C CNN
+F 2 "" H 4050 3800 50  0001 C CNN
+F 3 "" H 4050 3800 50  0001 C CNN
+	1    4050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5BAE8121
+P 4450 2050
+F 0 "#FLG?" H 4450 2125 50  0001 C CNN
+F 1 "PWR_FLAG" H 4450 2224 50  0000 C CNN
+F 2 "" H 4450 2050 50  0001 C CNN
+F 3 "~" H 4450 2050 50  0001 C CNN
+	1    4450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5BAE8179
+P 4450 2200
+F 0 "#PWR?" H 4450 2050 50  0001 C CNN
+F 1 "+3V3" H 4465 2373 50  0000 C CNN
+F 2 "" H 4450 2200 50  0001 C CNN
+F 3 "" H 4450 2200 50  0001 C CNN
+	1    4450 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 2200 4450 2050
+$EndSCHEMATC
